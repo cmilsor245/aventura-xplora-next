@@ -48,7 +48,7 @@ export default function CtaForm() {
             <p>Recibe notificaciones para estar siempre al día con las últimas novedades de nuestra web y poder compartirlo con tus seres queridos</p>
           </div>
 
-          <form className='cta-form' name='cta-form' method='post' data-netlify='true'>
+          <form className='cta-form' name='cta-form' action = '' method='post' data-netlify='true'>
             <div className='cta-input-wrapper cta-name-input'>
               <label htmlFor='cta-name'>Nombre<span className='obligatorio'>*</span></label>
               <input id='cta-name' className='cta-input' type='text' name='cta-name' required onFocus={HANDLE_INPUT_FOCUS} placeholder='Introduce tu nombre...' />
