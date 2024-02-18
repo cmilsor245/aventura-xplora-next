@@ -9,7 +9,7 @@ const HANDLE_INPUT_FOCUS = (e) => {
 export default function Formulario() {
   return (
     <section className = 'formulario-contacto-wrapper'>
-      <form className = 'formulario-contacto' name='contact-form' action = '#' method='post' data-netlify='true'>
+      <form className = 'formulario-contacto' name = 'contact-form' action = '#' method = 'post' data-netlify = 'true'>
         <div className = 'elemento-formulario-contacto'>
           <label htmlFor = 'contact-user-name' className = 'label'>
             Nombre<span className = 'obligatorio'>*</span>

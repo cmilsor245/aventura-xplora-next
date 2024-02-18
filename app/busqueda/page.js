@@ -1,7 +1,13 @@
+import Divider from '@/components/shared/divider.js'
+import SearchBar from '@/components/shared/search-bar.js'
+import Productos from '@/components/busqueda/productos.js'
+
 export default function Busqueda() {
   return (
-    <>
-      <h1>búsqueda</h1>
-    </>
+    <main className = 'main'>
+      <SearchBar />
+      <Divider h1 = 'PODRÍA INTERESARTE...' />
+      <Productos />
+    </main>
   )
 }
