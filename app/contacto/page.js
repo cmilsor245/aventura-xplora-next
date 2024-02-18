@@ -1,7 +1,9 @@
+import ContactoSection from '@/components/contacto/contacto-section.js'
+
 export default function Contacto() {
   return (
-    <>
-      <h1>contacto</h1>
-    </>
+    <main className = 'main'>
+      <ContactoSection />
+    </main>
   )
 }
