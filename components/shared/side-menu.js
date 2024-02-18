@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import Link from 'next/link'
 import '@/styles/shared/side-menu/menu/style.css'
 import '@/styles/shared/side-menu/overlay/style.css'
 
@@ -52,10 +53,10 @@ export default function SideMenu() {
 
           <div className = 'side-menu--main--options'>
             <div className = 'side-menu--contact-wrapper'>
-              <a href = 'pages/contacto.html'>
+              <Link href = 'contacto'>
                 <img className = 'contact-icon-side--menu' src = '/icons/header/telefono.svg' alt = 'contacto' />
                 <p>911 22 33 44</p>
-              </a>
+              </Link>
             </div>
 
             <div className = 'side-menu--divider'></div>
