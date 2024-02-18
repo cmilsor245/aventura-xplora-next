@@ -65,9 +65,9 @@ export default function Header() {
             <ul className = 'lista-opciones-nav'>
               <li>CARIBE</li><div className = 'barra-divisoria-nav'></div>
               <li>ISLAS</li><div className = 'barra-divisoria-nav'></div>
-              <li><a href = '#choose-trip'>ELIGE TU VIAJE</a></li><div className = 'barra-divisoria-nav'></div>
-              <li><a href = '#offers-section'>OFERTAS</a></li><div className = 'barra-divisoria-nav'></div>
-              <li><a href = '#guides-section'>GUÍAS DE VIAJE</a></li><div className = 'barra-divisoria-nav'></div>
+              <li><a href = '/#choose-trip'>ELIGE TU VIAJE</a></li><div className = 'barra-divisoria-nav'></div>
+              <li><a href = '/#offers-section'>OFERTAS</a></li><div className = 'barra-divisoria-nav'></div>
+              <li><a href = '/#guides-section'>GUÍAS DE VIAJE</a></li><div className = 'barra-divisoria-nav'></div>
               <li>DISNEY</li><div className = 'barra-divisoria-nav'></div>
               <li className = 'cta-btn'>CTA</li>
             </ul>
