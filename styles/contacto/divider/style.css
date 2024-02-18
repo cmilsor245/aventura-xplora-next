@@ -1,0 +1,17 @@
+.contacto-divider {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--asap-bolditalic);
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1300px) {
+  .contacto-divider {
+    display: none;
+  }
+}

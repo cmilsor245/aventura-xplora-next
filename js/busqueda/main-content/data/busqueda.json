@@ -1,0 +1,62 @@
+[
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen1.webp",
+    "pais": "Aqualand",
+    "descripcion": "Sumérgete en las movidas aguas de Aqualand y disfruta en familia de una experiencia inolvidable"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen2.webp",
+    "pais": "Italia",
+    "descripcion": "Visita las impresionantes estructuras de Italia y maravíllate con su arte, historia y exquisita gastronomía mediterránea"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen3.webp",
+    "pais": "Grecia",
+    "descripcion": "Explora la cuna de la civilización occidental en Grecia: templos antiguos, playas de ensueño y hospitalidad inigualable te esperan"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen4.webp",
+    "pais": "Eslovenia",
+    "descripcion": "Descubre la joya escondida de Europa en Eslovenia: paisajes naturales deslumbrantes, castillos encantadores y una cultura cautivadora te aguardan"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen5.webp",
+    "pais": "EE.UU",
+    "descripcion": "Embárcate en un viaje épico por la Costa Oeste de EE. UU.: desde la majestuosidad del Gran Cañón hasta las luces de Hollywood, vive una experiencia inolvidable"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen6.webp",
+    "pais": "Marruecos",
+    "descripcion": "Sumérgete en un caleidoscopio cultural en Marruecos, donde la arquitectura, los zocos y el desierto tejen una experiencia inolvidable"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen7.webp",
+    "pais": "Egipto",
+    "descripcion": "Explora la tierra de los faraones en Egipto, donde la grandeza de las pirámides y el misterio del Nilo te cautivarán eternamente"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen8.webp",
+    "pais": "Laos",
+    "descripcion": "Descubre la serenidad de Laos: templos dorados, naturaleza exuberante y una cultura auténtica te esperan para una experiencia inolvidable"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen9.webp",
+    "pais": "Birmania",
+    "descripcion": "Adéntrate en el encanto de Birmania, donde los templos dorados y la autenticidad cultural te sumergirán en un viaje único e inolvidable"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen10.webp",
+    "pais": "Montenegro",
+    "descripcion": "Descubre la joya escondida de Montenegro: paisajes escarpados, costa impresionante y encanto medieval te aguardan para una aventura inolvidable"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen11.webp",
+    "pais": "Georgia",
+    "descripcion": "Explora la riqueza cultural de Georgia, entre montañas majestuosas, gastronomía única y hospitalidad incomparable, ¡una experiencia fascinante te espera!"
+  },
+  {
+    "img_src": "../assets/img/productos-busqueda/imagen12.webp",
+    "pais": "Irán",
+    "descripcion": "Descubre la esencia de Irán, entre mosaicos centenarios, mercados bulliciosos y una historia que teje un viaje único e inolvidable"
+  }
+]

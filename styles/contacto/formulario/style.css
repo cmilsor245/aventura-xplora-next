@@ -1,0 +1,100 @@
+.formulario-contacto-wrapper {
+  margin-top: 10%;
+  background-color: var(--primario);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+  border-radius: 10px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.elemento-formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.elemento-formulario-contacto label {
+  font-family: var(--inter-bold);
+  font-size: 20px;
+}
+
+.obligatorio {
+  font-family: var(--kameron-regular);
+}
+
+.elemento-formulario-contacto input, textarea {
+  cursor: text;
+  padding: 5px 10px;
+  border-radius: 5px;
+  min-width: 370px;
+  font-family: var(--kameron-regular);
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.elemento-formulario-contacto input::placeholder, .elemento-formulario-contacto textarea::placeholder {
+  font-family: var(--kameron-regular);
+}
+
+.elemento-formulario-contacto input::selection, .elemento-formulario-contacto textarea::selection {
+  background-color: var(--primario-active);
+  color: var(--neutral-light);
+}
+
+.elemento-formulario-contacto textarea {
+  min-height: 400px;
+  resize: vertical;
+}
+
+.submit-btn-contacto {
+  font-family: var(--anybody-extrabold);
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 5px;
+  width: 100%;
+  transition: .1s;
+  cursor: pointer;
+  border: none;
+  background-color: var(--neutral-light);
+  color: var(--primario-active);
+}
+
+.submit-btn-contacto:hover {
+  transform: scale(1.02);
+  background-color: var(--neutral-light-hover);
+}
+
+.submit-btn-contacto:active {
+  background-color: var(--neutral-light-active);
+  transform: scale(1);
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .elemento-formulario-contacto input, .elemento-formulario-contacto textarea {
+    min-width: 250px;
+  }
+
+  .elemento-formulario-contacto textarea {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 350px) {
+  .elemento-formulario-contacto input, .elemento-formulario-contacto textarea {
+    min-width: 200px;
+  }
+}

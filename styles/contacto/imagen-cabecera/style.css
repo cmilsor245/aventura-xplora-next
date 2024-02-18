@@ -1,0 +1,24 @@
+.contacto-section {
+  background-color: var(--primario-dark-hover);
+  padding: 60px 20%;
+  padding-top: 10px;
+}
+
+.contacto-section-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--neutral-light);
+}
+
+.contacto-imagen {
+  width: 100%;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1300px) {
+  .contacto-imagen {
+    display: none;
+  }
+}

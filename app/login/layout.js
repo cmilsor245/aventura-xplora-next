@@ -1,13 +1,9 @@
 import '@/styles/general.css'
 
-import Header from '@/components/header.js'
 import Footer from '@/components/footer.js'
+import BottomBar from '@/components/shared/bottom-bar'
 
-import BottomBar from '@/components/shared/bottom-bar.js'
-import CtaForm from '@/components/shared/cta-form.js'
-import SideMenu from '@/components/shared/side-menu.js'
-
-export default function GeneralLayout({ children }) {
+export default function LoginLayout({ children }) {
   return (
     <html lang = 'en'>
       <head>
@@ -17,13 +13,10 @@ export default function GeneralLayout({ children }) {
         <title>AVENTURA XPLORA</title>
       </head>
       <body>
-        <Header />
         {children}
         <Footer />
 
         <BottomBar />
-        <CtaForm />
-        <SideMenu />
       </body>
     </html>
   )
