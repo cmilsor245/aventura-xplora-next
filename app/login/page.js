@@ -1,7 +1,9 @@
-export default function Home() {
+import LoginForm from '@/components/login/login-form.js'
+
+export default function Login() {
   return (
-    <>
-      <h1>login</h1>
-    </>
+    <main className = 'main'>
+      <LoginForm />
+    </main>
   )
 }
