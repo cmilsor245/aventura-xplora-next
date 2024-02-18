@@ -32,18 +32,7 @@ export default function CtaForm() {
     ACTIVATION_BUTTON.addEventListener('click', handleClick)
     OVERLAY.addEventListener('click', handleClick)
     RESET_AND_CLOSE_BTN.addEventListener('click', handleClick)
-    if (ACTIVATION_BUTTON_CTA_SIDE_MENU) {
-      ACTIVATION_BUTTON_CTA_SIDE_MENU.addEventListener('click', handleSideMenuClick)
-    }
-
-    return () => {
-      ACTIVATION_BUTTON.removeEventListener('click', handleClick)
-      OVERLAY.removeEventListener('click', handleClick)
-      RESET_AND_CLOSE_BTN.removeEventListener('click', handleClick)
-      if (ACTIVATION_BUTTON_CTA_SIDE_MENU) {
-        ACTIVATION_BUTTON_CTA_SIDE_MENU.removeEventListener('click', handleSideMenuClick)
-      }
-    }
+    ACTIVATION_BUTTON_CTA_SIDE_MENU.addEventListener('click', handleSideMenuClick)
   }, [])
 
   const HANDLE_INPUT_FOCUS = (e) => {
