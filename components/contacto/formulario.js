@@ -2,11 +2,12 @@
 
 import '@/styles/contacto/formulario/style.css'
 
-const HANDLE_INPUT_FOCUS = (e) => {
-  e.target.select()
-}
 
 export default function Formulario() {
+  const HANDLE_INPUT_FOCUS = (e) => {
+    e.target.select()
+  }
+
   return (
     <section className = 'formulario-contacto-wrapper'>
       <form className = 'formulario-contacto' name = 'contact-form' action = '#' method = 'post' data-netlify = 'true'>
