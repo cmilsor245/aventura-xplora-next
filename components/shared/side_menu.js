@@ -1,35 +1,44 @@
 'use client'
 
-import React from 'react'
+import {useState} from 'react'
 import Link from 'next/link'
 import '@/styles/shared/side-menu/menu/style.css'
 import '@/styles/shared/side-menu/overlay/style.css'
+import CtaForm from './cta_form'
+
 
   export default function SideMenu({ modal, setModal }) {
-    const handleClose = () => setModal(false)
-
+    const handleClose = () => setModal(false);
+  
     const handleOverlayClick = () => {
-      setModal(false)
-    }
-
+      setModal(false);
+    };
+  
     if (!modal) {
-      return null
+      return null;
     }
+  
+ 
+  const [modal2, setModal2] = useState(false)
 
+  const handleChangeModal = () => {
+    setModal2(!modal2)
+  }
   return (
     <>
-      <aside>
+   
+      <aside >
         <div className = 'side-menu-content'>
           <div className = 'side-menu--top-options'>
             <img className = 'side-menu--top--icon' src = '/icons/side-menu/lightbulb.svg' alt = 'bombilla' />
-            <img onClick = { handleClose } className = 'side-menu--top--icon side--menu-close-icon' src = '/icons/side-menu/close.svg' alt = 'close' />
+            <img onClick={handleClose} className = 'side-menu--top--icon side--menu-close-icon' src = '/icons/side-menu/close.svg' alt = 'close' />
           </div>
 
-          <div className = 'flex side-menu--main--options'>
-            <div className = 'mb-5'>
-              <Link className = 'side-menu--contact-link' href = 'contacto'>
+          <div className='flex'>
+            <div className='mb-5'>
+              <Link href = 'contacto'>
                 <img className = 'contact-icon-side--menu' src = '/icons/header/telefono.svg' alt = 'contacto' />
-                <p>911 22 33 44</p>
+         
               </Link>
             </div>
 
@@ -177,10 +186,11 @@ import '@/styles/shared/side-menu/overlay/style.css'
               </div>
 
               <div className = 'side-menu--button side--menu-cta-button'>
-                <a>
+                <a onClick={handleChangeModal}>
                   <div className = 'side-menu--button--left'>
                     <img className = 'side-menu--button--icon' src = '/icons/side-menu/options/icon15.svg' alt = 'cinta' />
                     <p>CTA</p>
+                    {modal2 && <CtaForm modal={modal2} setModal={setModal2} />}
                   </div>
                   <img className = 'side-menu--button--icon' src = '/icons/side-menu/options/chevron.svg' alt = 'flecha' />
                 </a>
@@ -189,7 +199,8 @@ import '@/styles/shared/side-menu/overlay/style.css'
           </div>
         </div>
       </aside>
-      <div className = 'cta-blur-overlay' onClick = { handleOverlayClick }></div>
+      <div className='cta-blur-overlay' onClick={handleOverlayClick}></div>
+
     </>
   )
 }
