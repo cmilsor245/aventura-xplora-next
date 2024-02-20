@@ -1,59 +1,33 @@
 'use client'
 
-import { useEffect } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import '@/styles/shared/side-menu/menu/style.css'
 import '@/styles/shared/side-menu/overlay/style.css'
 
-export default function SideMenu() {
-  useEffect(() => {
-    const ACTIVATION_BUTTON_1 = document.querySelector('.icono-menu-lateral')
-    const ACTIVATION_BUTTON_2 = document.querySelector('.icono-menu-lateral-nav')
-    const SIDE_MENU = document.querySelector('.side-menu-wrapper')
-    const SIDE_MENU_OVERLAY = document.querySelector('.side--menu-blur-overlay')
-    const CLOSE_BTN = document.querySelector('.side--menu-close-icon')
+  export default function SideMenu({ modal, setModal }) {
+    const handleClose = () => setModal(false)
 
-    const handleActivationButtonClick = () => {
-      SIDE_MENU.classList.add('show-menu')
-      SIDE_MENU.classList.remove('hide-menu')
-      SIDE_MENU_OVERLAY.classList.remove('hidden')
-      SIDE_MENU.style.display = 'block'
+    const handleOverlayClick = () => {
+      setModal(false)
     }
 
-    const handleCloseButtonClick = () => {
-      SIDE_MENU.classList.remove('show-menu')
-      SIDE_MENU.classList.add('hide-menu')
-      SIDE_MENU_OVERLAY.classList.add('hidden')
-      SIDE_MENU.style.display = 'none'
+    if (!modal) {
+      return null
     }
-
-    ACTIVATION_BUTTON_1.addEventListener('click', handleActivationButtonClick)
-    ACTIVATION_BUTTON_2.addEventListener('click', handleActivationButtonClick)
-    SIDE_MENU_OVERLAY.addEventListener('click', handleCloseButtonClick)
-    CLOSE_BTN.addEventListener('click', handleCloseButtonClick)
-
-    return () => {
-      ACTIVATION_BUTTON_1.removeEventListener('click', handleActivationButtonClick)
-      ACTIVATION_BUTTON_2.removeEventListener('click', handleActivationButtonClick)
-      SIDE_MENU_OVERLAY.removeEventListener('click', handleCloseButtonClick)
-      CLOSE_BTN.removeEventListener('click', handleCloseButtonClick)
-    }
-  }, [])
-
-  /* ----------------------------------------------------------------------------------------------------------- */
 
   return (
     <>
-      <aside className = 'side-menu-wrapper hidden'>
+      <aside>
         <div className = 'side-menu-content'>
           <div className = 'side-menu--top-options'>
             <img className = 'side-menu--top--icon' src = '/icons/side-menu/lightbulb.svg' alt = 'bombilla' />
-            <img className = 'side-menu--top--icon side--menu-close-icon' src = '/icons/side-menu/close.svg' alt = 'close' />
+            <img onClick = { handleClose } className = 'side-menu--top--icon side--menu-close-icon' src = '/icons/side-menu/close.svg' alt = 'close' />
           </div>
 
-          <div className = 'side-menu--main--options'>
-            <div className = 'side-menu--contact-wrapper'>
-              <Link href = 'contacto'>
+          <div className = 'flex side-menu--main--options'>
+            <div className = 'mb-5'>
+              <Link className = 'side-menu--contact-link' href = 'contacto'>
                 <img className = 'contact-icon-side--menu' src = '/icons/header/telefono.svg' alt = 'contacto' />
                 <p>911 22 33 44</p>
               </Link>
@@ -215,7 +189,7 @@ export default function SideMenu() {
           </div>
         </div>
       </aside>
-      <div className = 'side--menu-blur-overlay hidden'></div>
+      <div className = 'cta-blur-overlay' onClick = { handleOverlayClick }></div>
     </>
   )
 }

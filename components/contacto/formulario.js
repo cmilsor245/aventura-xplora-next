@@ -2,7 +2,6 @@
 
 import '@/styles/contacto/formulario/style.css'
 
-
 export default function Formulario() {
   const HANDLE_INPUT_FOCUS = (e) => {
     e.target.select()
