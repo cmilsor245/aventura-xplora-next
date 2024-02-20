@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 690px) {
-  .divider {
-    font-size: 15px;
+  .divider h1 {
+    font-size: 20px;
   }
 }
